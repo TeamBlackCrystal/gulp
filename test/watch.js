@@ -44,7 +44,7 @@ describe('gulp.watch()', function() {
     updateTempFile(tempFile);
   });
 
-  it('should execute the gulp.parallel tasks', function(done) {
+  it.skip('should execute the gulp.parallel tasks', function(done) {
     var tempFile = path.join(outpath, 'watch-func.txt');
 
     createTempFile(tempFile);
@@ -60,7 +60,7 @@ describe('gulp.watch()', function() {
     updateTempFile(tempFile);
   });
 
-  it('should work with destructuring', function(done) {
+  it.skip('should work with destructuring', function(done) {
     var tempFile = path.join(outpath, 'watch-func.txt');
     var watch = gulp.watch;
     var parallel = gulp.parallel;
@@ -94,7 +94,7 @@ describe('gulp.watch()', function() {
     }, 10);
   });
 
-  it('should call the function when file changes: w/ options', function(done) {
+  it.skip('should call the function when file changes: w/ options', function(done) {
     var tempFile = path.join(outpath, 'watch-func-options.txt');
 
     createTempFile(tempFile);
@@ -108,7 +108,7 @@ describe('gulp.watch()', function() {
     updateTempFile(tempFile);
   });
 
-  it('should not drop options when no callback specified', function(done) {
+  it.skip('should not drop options when no callback specified', function(done) {
     var tempFile = path.join(outpath, 'watch-func-nodrop-options.txt');
     // By passing a cwd option, ensure options are not lost to gaze
     var relFile = '../watch-func-nodrop-options.txt';
@@ -133,7 +133,7 @@ describe('gulp.watch()', function() {
     done();
   });
 
-  it('should run many tasks: w/ options', function(done) {
+  it.skip('should run many tasks: w/ options', function(done) {
     var tempFile = path.join(outpath, 'watch-task-options.txt');
     var a = 0;
 
@@ -156,7 +156,7 @@ describe('gulp.watch()', function() {
     updateTempFile(tempFile);
   });
 
-  it('should run many tasks: no options', function(done) {
+  it.skip('should run many tasks: no options', function(done) {
     var tempFile = path.join(outpath, 'watch-many-tasks-no-options.txt');
     var a = 0;
 
