@@ -1,3 +1,6 @@
 {
-  "extends": "gulp/test"
+  "extends": "gulp",
+  "env": {
+    "mocha": true
+  }
 }

@@ -4,6 +4,8 @@ var expect = require('expect');
 
 var gulp = require('../');
 
+/* eslint no-prototype-builtins: 0 */
+
 describe('gulp', function() {
 
   describe('hasOwnProperty', function() {
